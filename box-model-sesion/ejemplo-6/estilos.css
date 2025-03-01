@@ -21,4 +21,5 @@ body{
 .nav__link{
     color: white;
     text-decoration: none;
+    padding-right: 1rem;
 }
