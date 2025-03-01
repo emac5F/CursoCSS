@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+.element{
+    width: 200px;
+    height: 200px;
+    background-color: steelblue;
+    margin: 60px;
+    
+    /* transition-property: all;
+    transition-duration:0s;
+    transition-timing-function:ease;
+    transition-delay: 0s; */
+
+    /* transition: transition-timing-function  transition-property transition-duration transition-delay*/
+    transition:ease-in transform 1s 2s ;
+
+    /* ease: aumenta la velocidad hacia ma mitad de la animacion y disminuye al final
+    ease-in: comienza lento y despues aumenta la velociad progresivamente
+    ease-out: comienza rapido y disminuye la velocidad con el tiempo
+    ease-in-out: comienza lentamente acelera y luego disminuye
+    linear: velocidad constante
+     */
+}
+
+
+.container:hover .element{
+    background-color: #000;
+    transform: translate(200px);
+}
