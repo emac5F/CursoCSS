@@ -13,11 +13,18 @@ body{
     grid-template-rows: repeat(4,1fr);
 
     /* grid-auto-flow:column dense; */
-    /* grid-template-columns:repeat(2,60px);    
+    /* grid-template-columns:repeat(2,60px);   
+    grid-template-columns:repeat(3, [colum-start] 1fr [column-end]); 
     grid-template-rows:repeat(2,1fr); */
 
-    /* grid-auto-columns: ;
+    /* max-content(maximo tamanio posible) & min content(minimo contenido posible) */
+    /* grid-template-columns: max-content mim-content;
+    /* grid-template-column:fit-content(200px);
+    grid-template-column:minmax(min-content, 1fr); (50%, min-content); (4px,1fr)
+    
+    grid-auto-columns: ;
     grid-auto-rows: ; */
+
 
 
     width: 90%;

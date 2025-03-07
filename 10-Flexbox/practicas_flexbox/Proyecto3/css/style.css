@@ -198,6 +198,7 @@ body {
     margin-right: 1em;
 }
 
+/* formulario */
 .newsletter {
     background-color: var(--desaturated-blue);
     color: #fff;
@@ -241,6 +242,7 @@ body {
     border: none;
 }
 
+/* footer */
 .footer {
     background-color: var(--very-dark-blue);
     color: #fff;

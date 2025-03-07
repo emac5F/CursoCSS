@@ -133,6 +133,7 @@ body{
 
     .hero__img{
         max-width: unset;
+        /* unset lo pone al valor original */
     }
 
 
