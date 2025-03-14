@@ -1,0 +1,55 @@
+:root {
+    --background: #3c343d;
+    --height: 24rem;
+    --gap: 1rem;
+    --width: 800px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: var(--background);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    max-width: var(--width);
+  }
+  
+  .card {
+    border-radius: 1rem;
+    height: var(--height);
+    overflow: hidden;
+    background: var(--background);
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    flex: 0.25;
+  }
+  
+  .card:hover {
+    flex: 2;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.5rem;
+  }
+  
+  .card img {
+    height: var(--height);
+    background-image: cover;
+    aspect-ratio: auto;
+  }
+  
+  figure {
+    /* normalize le incluye este estilo */
+    margin: 1em 40px;
+    margin: 0;
+  }
