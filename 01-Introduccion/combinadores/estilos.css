@@ -1,0 +1,21 @@
+/* Tipos de combinadores */
+
+/* hermanos cercanos */
+h2 + p{
+    color: blue;
+}
+
+/* hermano general */
+h2 ~ p{
+    color: rebeccapurple;
+}
+
+/* hijos directos */
+.div > p{
+    color: red;
+}
+
+/* descendientes */
+.div p{
+    color: darkgoldenrod;
+}

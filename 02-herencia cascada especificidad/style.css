@@ -13,6 +13,20 @@ input{
 }
 
 
+/* ++Especificidad: ++ .
+especificidad es el orden en que el navegador interpreta las 
+sentencias en css para que las muestre acorde al orden en que 
+las tenga predeterminadas en el mismo y dependiendo, toma las 
+del archivo css que tenga el proyecto.
+si le agregas un estilo embebido desde el navegador(html), también 
+se anula lo que hayas declarado en tu css.
+
+1.- Important (1,0,0,0,0) --> no es buena practica! usar estos
+2.- inline-styles (0,1,0,0,0) --> tres, no es recomendable
+3.- #IDS (0,0,1,0,0) --> usarlo
+4.- .Class (0,0,0,1,0)
+5.- <Tags> (0,0,0,0,1)*/
+
 /* 1 - Selector de tipo, Pseudoelementos ::*/
 /* 10 - Selector de clase, Pseudoclases :, []*/
 /* 100 - Selector de ID */

@@ -1,21 +1,18 @@
-/* 
-
-
-Selector universal 
+/* Selector universal  */
 
 *{
     color: red;
     font-size: 30px;
 }
 
-Selector de tipo 
+/* Selector de tipo  */
 
 p{
     color: orange;
     font-size: 30px;
 } 
 
-Selector de clase
+/* Selector de clase */
 
 .titulo{
     color: brown;
@@ -27,16 +24,16 @@ Selector de clase
     font-weight: bold;
 }
 
-Selector de ID
+/* Selector de ID */
 
 #titulo{
     color: steelblue;
     font-size: 50px;
-} */
+}
 
 
-/* 
-combinador de descendientes 
+
+/* combinador de descendientes  */
 
 .abuelito .titulo{
     color: red;
@@ -44,9 +41,8 @@ combinador de descendientes
 }
 
 
-combinador de hijos directos
+/* combinador de hijos directos */
 .abuelito>.titulo{
     color: blue;
 } 
 
-*/
