@@ -1,0 +1,36 @@
+:root{
+    --primary-color: #a52a2a;
+    --secondary-color: #28282a;
+    --header-size: 4rem;
+    --width-size:100vw;
+    --font: 1.8rem;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* para q 1rem=10px */
+    font-size: 62.5%;
+}
+header{
+    width: var(--width-size);
+    height: 15vh;
+    background-color: var(--primary-color);
+}
+main{
+    width: var(--width-size);
+    height: 70vh;
+    font-size: var(--font);
+}
+h1{
+    font-size: var(--header-size);
+    color: var(--secondary-color);
+}
+footer{
+    width: var(--width-size);
+    height: 15vh;
+    background-color: var(--secondary-color);
+}
