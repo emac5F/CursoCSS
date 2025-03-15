@@ -1,0 +1,52 @@
+/* medida absoluta: px */
+/* medida relativa: %,em,rem,vh,vw */
+/* em: toma el valor de su padre directo proximo */
+/* rem:  tomo el valor del padre*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* html{
+    font-size: 62.5%;
+} */
+
+body{
+    font-size: 20px;
+}
+
+.text-container{
+    background-color: chocolate;
+    font-size: 1em;
+    /* width: 100%;
+    height: 500px; */
+    width: 100vw;
+    height: 100vh;
+}
+
+p{
+    font-size: 18px;
+}
+
+.text-container div > p{
+    font-size: 1.5em;
+}
+
+.text-container div > p:nth-child(2){
+    font-size: 1rem;
+}
+
+section{
+    /* para usar min-width y max-width siempre debemos tener un width base */
+    width: 80%;
+    min-width: 320px;
+    max-width: 540px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+
+section p{
+    font-size: 2rem;
+}

@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -15,44 +16,51 @@ body{
     background-color: royalblue;
 }
 
+.parent{
+    border: 2px black dotted;
+    display: inline-block;
+}
+.box{
+    display: inline-block;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+#dos{
+    background-color: green;
+    position: absolute;
+}
+#tres{
+    position: relative;
+    background-color: aquamarine;
+    bottom: 20px;
+}
+
 
 @media (min-width:600px){
-
-
     .element{
         background-color: crimson;   
     }
-
 }
 
 @media (min-width:900px){
-
-
     .element{
         background-color: #000;   
     }
-
 }
 
 
 
-/* @media (max-width: 800px){
-
-
+@media (max-width: 800px){
     .element{
         background-color: crimson;   
     }
-
 }
 
-
 @media (max-width: 500px){
-
-
     .element{
         background-color: blueviolet;   
     }
-
-} */
+}
 
 
