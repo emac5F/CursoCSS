@@ -1,0 +1,8 @@
+.picture{
+    width: 500px;
+    height: 400px;
+}
+img{
+    /* es de buenas practicas */
+    width: 100%;
+}

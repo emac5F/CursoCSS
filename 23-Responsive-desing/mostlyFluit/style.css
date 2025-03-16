@@ -66,3 +66,5 @@ html{
         width: 34%;
     }
 } */
+
+/* En mostly fluid existe un solo breakpoint entre pantallas grandes y chicas, entonces de acuerdo a la resolución que tenga la pantalla irá fluyendo libremente (con medidas relativas). */

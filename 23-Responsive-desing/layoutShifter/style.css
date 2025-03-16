@@ -69,3 +69,5 @@ html{
         order: 2;
     }
 }
+
+/* layout shifter hay muchos más breakpoints y, si bien es mucho más laborioso, nos podremos encontrar con un control más profundo del layout. */
