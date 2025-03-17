@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 90px;
+}
+
+.link{
+    background-color: #8b108b;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 1rem 2.5rem;
+}
+
+.link:hover{
+    transform: scale(1.3);
+    background-color: teal;
+}
+
+.box{
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: tomato;
+}
