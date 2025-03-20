@@ -1,0 +1,94 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(238, 238, 212);
+}
+
+.hero{
+    margin: 0 auto;
+    width: min(90%, 1000px);
+    height: 95vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__texts{
+    width: 50%;
+}
+
+.hero__title{
+    font-size: 2.5rem;
+    margin-bottom: .8rem;
+    color:darkcyan;
+}
+
+.hero__cellphone{
+    width: 50%;
+}
+
+.hero:hover .hero__cellphone{
+    animation-name: rotar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes rotar {
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(0deg);
+    }
+    80%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(-0deg);
+    }
+}
+
+.arrow{
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    width: 60px;
+
+    animation-name: bajar;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bajar {
+    0%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(-100%);
+    }
+    80%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-30);
+    }
+}
+
+#about{
+    height: 100vh;
+    background-image: linear-gradient(hotpink, purple);
+}
