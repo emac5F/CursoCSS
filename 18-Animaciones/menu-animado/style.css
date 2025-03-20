@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+.nav{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+}
+
+.nav__menu{
+    background-color: transparent;
+    border: none;
+
+    z-index: 10;
+}
+
+
+.menu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+
+    display: grid;
+    text-align: center;
+    place-content: center;
+    gap: 2rem;
+}
+
+.menu__link{
+    color: white;
+    text-decoration: none;
+}
