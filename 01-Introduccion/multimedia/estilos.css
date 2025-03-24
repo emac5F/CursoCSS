@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 20px;
+}
+video {
+    height: 240px;
+    display: block;
+    border: 3px solid darkslategrey;
+    border-radius: 10px;
+  }
+  
+  div {
+    color: white;
+    font-size: 22px;
+    background: darkslategrey;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 30px;
+  }
