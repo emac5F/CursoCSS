@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            padding: 20px;
+            background: lightgreen;
+            position: absolute;
+            /* left: -120px; */
+            animation: slideIn 1s ease-out forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%); 
+                opacity: 0;          
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Utilizando CSS genera una animación para que la div con clase box se deslice desde la izquierda al cargar la página. -->
+    <div class="box">¡Hola!</div>
+</body>
+</html>
