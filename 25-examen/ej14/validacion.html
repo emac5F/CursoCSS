@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            gap: 10px;
+        }
+        
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 14. Validar campo vacío
+    Crea un formulario con un campo de texto para ingresar el nombre y un botón para enviar. Usa JavaScript para prevenir el envío si el campo está vacío, mostrando una alerta con el mensaje “El nombre es requerido!”. Asegúrate de usar addEventListener y una arrow function para manejar el evento submit. -->
+    
+    <form id="form">
+        <input type="text" id="name" placeholder="Your name">
+        <button type="submit">Submit</button>
+      </form>
+      
+      <script>
+        document.getElementById("form").addEventListener("submit", (event) => {
+            const nameInput = document.getElementById("name").value.trim();
+            
+            if (nameInput === "") {
+                event.preventDefault(); // Evita el envío del formulario
+                alert("El nombre es requerido!");
+            }
+        });
+
+      </script>      
+</body>
+</html>
