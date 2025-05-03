@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegacion mobile</title>
+
+    <!-- 20. Ocultar navegación en mobile
+    Ocultá la lista de navegación en pantallas menores a 768px. -->
+
+    <style>
+        .navbar ul {
+          display: flex;
+          gap: 15px;
+          list-style: none;
+          padding: 0;
+        }
+      
+        .navbar a {
+          text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .navbar ul {
+                display: none; /* Oculta la lista de navegación */
+            }
+        } 
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+</body>
+</html>
